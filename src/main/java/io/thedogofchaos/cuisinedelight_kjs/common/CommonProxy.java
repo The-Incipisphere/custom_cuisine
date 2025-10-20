@@ -1,10 +1,10 @@
 package io.thedogofchaos.cuisinedelight_kjs.common;
 
-import io.thedogofchaos.cuisinedelight_kjs.CuisineDelight_KJS;
+import io.thedogofchaos.cuisinedelight_kjs.Custom_Cuisine;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import static io.thedogofchaos.cuisinedelight_kjs.CuisineDelight_KJS.LOGGER;
+import static io.thedogofchaos.cuisinedelight_kjs.Custom_Cuisine.LOGGER;
 
 /**<p>
  * This class handles the logic for your mod on dedicated servers.
@@ -41,7 +41,7 @@ public class CommonProxy {
         LOGGER.info("CommonProxy loading!");
     }
 
-    /** This method should only be executed by either {@code super.init(modEventBus);} in {@link io.thedogofchaos.cuisinedelight_kjs.client.ClientProxy#init(IEventBus)} or {@code proxy.init(proxy.modEventBus);} in {@link CuisineDelight_KJS}*/
+    /** This method should only be executed by either {@code super.init(modEventBus);} in {@link io.thedogofchaos.cuisinedelight_kjs.client.ClientProxy#init(IEventBus)} or {@code proxy.init(proxy.modEventBus);} in {@link Custom_Cuisine}*/
     public void init(IEventBus modEventBus) {
         // REGISTRATE = Registrate.create(Becs_Mod_Template.MOD_ID); // UNCOMMENT IF USING REGISTRATE
     }

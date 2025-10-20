@@ -8,18 +8,18 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
-@Mod(CuisineDelight_KJS.MOD_ID)
-public class CuisineDelight_KJS {
+@Mod(Custom_Cuisine.MOD_ID)
+public class Custom_Cuisine {
     /** Your mods' id. MUST ALWAYS BE THE SAME AS THE mod_id FIELD IN gradle.properties */
-    public static final String MOD_ID = "cuisinedelight_kjs";
+    public static final String MOD_ID = "custom_cuisine";
     /** The human-readable version of your mod's id. Works best if this is the same as the mod_name field in gradle.properties. */
-    public static final String MOD_NAME = "Cuisine Delight KJS";
+    public static final String MOD_NAME = "Custom Cuisine";
 
     /** Initialises a SLF4J logging instance, for outputting information to the console (and by extension, the logfiles) on-demand. */
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public CuisineDelight_KJS() {
-        CuisineDelight_KJS.init();
+    public Custom_Cuisine() {
+        Custom_Cuisine.init();
 
         // DistExecutor allows you to make sure that the correct code is being loaded for the current side that the mod is running on (either a dedicated client, or a dedicated server).
         // Dedicated servers WILL CRASH if they encounter ANY method calls or classes that would be client-only, like rendering calls. Use this to be sure.

@@ -3,7 +3,7 @@ package io.thedogofchaos.cuisinedelight_kjs.client;
 import io.thedogofchaos.cuisinedelight_kjs.common.CommonProxy;
 import net.minecraftforge.eventbus.api.IEventBus;
 
-import static io.thedogofchaos.cuisinedelight_kjs.CuisineDelight_KJS.LOGGER;
+import static io.thedogofchaos.cuisinedelight_kjs.Custom_Cuisine.LOGGER;
 
 /**
  * The ClientProxy class handles all client-specific operations for your mod.
