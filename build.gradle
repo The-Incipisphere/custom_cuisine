@@ -190,7 +190,9 @@ dependencies {
     modImplementation("curse.maven:jade-324717:5876199") // Version 11.12.2
 
     // Cuisine Delight
-    modImplementation('dev.kxmc.cuisinedelight:Cuisine-Delight:1.1.17')
+    // I AM FUCKING DONE WITH TRYING TO IMPORT THIS SHIT
+    // modImplementation("dev.kxmc.cuisinedelight:Cuisine-Delight:1.1.17")
+
 
     // Mixin Extras (not needed unless you're using Mixins)
     //implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:$project.mixinextras_version"))
