@@ -11,9 +11,9 @@ import org.slf4j.Logger;
 @Mod(Becs_Mod_Template.MOD_ID)
 public class Becs_Mod_Template {
     /** Your mods' id. MUST ALWAYS BE THE SAME AS THE mod_id FIELD IN gradle.properties */
-    public static final String MOD_ID = "replaceme";
+    public static final String MOD_ID = "cuisinedelight_kjs";
     /** The human-readable version of your mod's id. Works best if this is the same as the mod_name field in gradle.properties. */
-    public static final String MOD_NAME = "ReplaceMe";
+    public static final String MOD_NAME = "Cuisine Delight KJS";
 
     /** Initialises a SLF4J logging instance, for outputting information to the console (and by extension, the logfiles) on-demand. */
     public static final Logger LOGGER = LogUtils.getLogger();

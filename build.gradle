@@ -72,7 +72,8 @@ base {
 }
 
 // Mojang ships Java 21 to end users in 1.20.1, so mods should target Java 17.
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+// but the mod i'm trying to work with is only compiled for java 21
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 legacyForge {
     // Specify the version of MinecraftForge to use.
@@ -167,6 +168,7 @@ dependencies {
     modCompileOnly("mezz.jei:jei-$project.minecraft_version-common-api:$project.jei_version") { transitive = false }
     modRuntimeOnly("mezz.jei:jei-$project.minecraft_version-forge:$project.jei_version") { transitive = false }
     // EMI
+    modCompileOnly("dev.emi:emi-forge:$project.emi_version+$project.minecraft_version:api")
     modRuntimeOnly("dev.emi:emi-forge:$project.emi_version+$project.minecraft_version")
 
     // Registrate (uncomment if you need to use Registrate.)
@@ -187,6 +189,11 @@ dependencies {
 
     // Jade
     modImplementation("curse.maven:jade-324717:5876199") // Version 11.12.2
+
+    // L2Core
+    compileOnly('dev.xkmc:L2Core:3.0.7-45')
+    // Cuisine Delight
+    compileOnly('dev.xkmc:Cuisine-Delight:1.2.3')
 
     // Mixin Extras (not needed unless you're using Mixins)
     //implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:$project.mixinextras_version"))
